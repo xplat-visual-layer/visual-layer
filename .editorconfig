@@ -41,7 +41,7 @@ indent_size = 4
 # Sort using and Import directives with System.* appearing first
 dotnet_sort_system_directives_first = true
 dotnet_separate_import_directive_groups = false
-dotnet_style_qualification_for_field = true:warning
+dotnet_style_qualification_for_field = false:warning
 dotnet_style_qualification_for_property = true:warning
 dotnet_style_qualification_for_method = true:warning
 dotnet_style_qualification_for_event = true:warning
@@ -88,7 +88,7 @@ dotnet_naming_symbols.static_fields.required_modifiers = static
 
 dotnet_naming_style.static_field_style.capitalization = camel_case
 
-# Instance fields are camelCase
+# Instance fields are camelCase and start with _
 dotnet_naming_rule.instance_fields_should_be_camel_case.severity = suggestion
 dotnet_naming_rule.instance_fields_should_be_camel_case.symbols = instance_fields
 dotnet_naming_rule.instance_fields_should_be_camel_case.style = instance_field_style
@@ -96,6 +96,7 @@ dotnet_naming_rule.instance_fields_should_be_camel_case.style = instance_field_s
 dotnet_naming_symbols.instance_fields.applicable_kinds = field
 
 dotnet_naming_style.instance_field_style.capitalization = camel_case
+dotnet_naming_style.instance_field_style.required_prefix = _
 
 # Locals and parameters are camelCase
 dotnet_naming_rule.locals_should_be_camel_case.severity = suggestion
@@ -133,7 +134,7 @@ csharp_indent_case_contents = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 
-# Prefer "var" everywhere
+# Prefer "var" where type is apparent
 csharp_style_var_for_built_in_types = false
 csharp_style_var_when_type_is_apparent = true:suggestion
 csharp_style_var_elsewhere = false:warning
@@ -181,8 +182,6 @@ dotnet_diagnostic.DOC108.severity = warning
 dotnet_diagnostic.DOC200.severity = warning
 dotnet_diagnostic.DOC202.severity = warning
 
-# CA1062: Validate arguments of public methods
-dotnet_diagnostic.CA1062.severity = warning
 
 [*.sln]
 indent_style = tab
