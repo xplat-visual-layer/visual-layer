@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\VisualComposition\VisualComposition.csproj" />
+    <ProjectReference Include="..\..\src\VisualLayer\VisualLayer.csproj" />
   </ItemGroup>
 
   <ItemGroup>

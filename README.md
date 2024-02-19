@@ -2,7 +2,7 @@
 
 ***An awesome template for your awesome library***
 
-[![NuGet package](https://img.shields.io/nuget/v/VisualComposition.svg)](https://nuget.org/packages/VisualComposition)
+[![NuGet package](https://img.shields.io/nuget/v/VisualLayer.svg)](https://nuget.org/packages/VisualLayer)
 
 
 ## Features
