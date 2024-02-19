@@ -1,5 +1,5 @@
-Visual Composition uses third-party libraries or other resources that may be
-distributed under licenses different than the Visual Composition software.
+Visual Layer uses third-party libraries or other resources that may be
+distributed under licenses different than the Visual Layer software.
 
 The attached notices are provided for information only.
 

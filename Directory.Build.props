@@ -31,9 +31,9 @@
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)strongname.snk</AssemblyOriginatorKeyFile>
 
     <!-- <PackageProjectUrl>https://github.com/ORG/REPO</PackageProjectUrl> -->
-    <Company>Visual Composition Project</Company>
-    <Authors>Visual Composition Project</Authors>
-    <Copyright>Â© Visual Composition Project. All rights reserved.</Copyright>
+    <Company>Visual Layer Project</Company>
+    <Authors>Visual Layer Project</Authors>
+    <Copyright>Â© Visual Layer Project. All rights reserved.</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
