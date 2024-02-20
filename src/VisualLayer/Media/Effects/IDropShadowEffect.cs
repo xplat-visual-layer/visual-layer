@@ -1,7 +1,6 @@
 // ReSharper disable once CheckNamespace
 
 using System;
-using Avalonia.Animation.Animators;
 
 namespace Avalonia.Media;
 
@@ -22,11 +21,6 @@ internal interface IDirectionDropShadowEffect : IDropShadowEffect
 
 public class ImmutableDropShadowEffect : IDropShadowEffect, IImmutableEffect
 {
-    static ImmutableDropShadowEffect()
-    {
-        EffectAnimator.EnsureRegistered();
-    }
-    
     public ImmutableDropShadowEffect(double offsetX, double offsetY, double blurRadius, Color color, double opacity)
     {
         OffsetX = offsetX;
@@ -53,11 +47,6 @@ public class ImmutableDropShadowEffect : IDropShadowEffect, IImmutableEffect
 
 public class ImmutableDropShadowDirectionEffect : IDirectionDropShadowEffect, IImmutableEffect
 {
-    static ImmutableDropShadowDirectionEffect()
-    {
-        EffectAnimator.EnsureRegistered();
-    }
-    
     public ImmutableDropShadowDirectionEffect(double direction, double shadowDepth, double blurRadius, Color color, double opacity)
     {
         Direction = direction;

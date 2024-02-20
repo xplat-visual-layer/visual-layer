@@ -179,7 +179,7 @@ namespace Avalonia.Platform
 
     public interface IDrawingContextImplWithEffects
     {
-        void PushEffect(IEffect effect);
+        void PushEffect(IImmutableEffect effect);
         void PopEffect();
     }
 

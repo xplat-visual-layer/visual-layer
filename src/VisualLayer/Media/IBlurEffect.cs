@@ -1,7 +1,5 @@
 // ReSharper disable once CheckNamespace
 
-using Avalonia.Animation.Animators;
-
 namespace Avalonia.Media;
 
 public interface IBlurEffect : IEffect
@@ -11,11 +9,6 @@ public interface IBlurEffect : IEffect
 
 public class ImmutableBlurEffect : IBlurEffect, IImmutableEffect
 {
-    static ImmutableBlurEffect()
-    {
-        EffectAnimator.EnsureRegistered();
-    }
-    
     public ImmutableBlurEffect(double radius)
     {
         Radius = radius;

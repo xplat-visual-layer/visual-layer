@@ -1,9 +1,6 @@
 using System;
 using System.Globalization;
 using System.Numerics;
-#if !BUILDTASK
-using Avalonia.Animation.Animators;
-#endif
 using Avalonia.Utilities;
 
 #nullable enable
